@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>首页</title>
+<link href="/templets/hehechang/css/homepage.css" rel="stylesheet" type="text/css" />
+<link href="/templets/hehechang/css/headfooter.css" rel="stylesheet" type="text/css" />
+<link href="/templets/hehechang/css/common.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="/templets/hehechang/css/global.css" />
+<link rel="stylesheet" href="/templets/hehechang/css/style.css" />
+<link rel="stylesheet" href="/templets/hehechang/css/tonglan.css" />
+<script type="text/javascript" src="/templets/hehechang/js/Designer.js" ></script>
+</head>
+<body class="news_list">
+<!--header-->
+{dede:include filename="head.htm"/}
+
+<!--内容-->
+<div class="content">
+	<div class="unified-banner"><img src="/templets/hehechang/images/jxs.jpg"></div>
+	<!-- title -->
+	<div class="rows">
+		<div class="unified-title">
+			<h1>{dede:field name='typename'/} </h1>
+			<div class="com-titlef">
+				<ul>
+					<li><a href="#" class="active">首页</a></li>
+					<li><i></i></li>
+					<li><a href="#">{dede:field name='typename'/} </a></li>
+				</ul>
+			</div>
+			<div class="com-titrig">
+				<div class="bshare-custom"><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到人人网" class="bshare-renren"></a><a title="分享到腾讯微博" class="bshare-qqmb"></a><a title="分享到网易微博" class="bshare-neteasemb"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a><span class="BSHARE_COUNT bshare-share-count">0</span></div><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+			</div>
+		</div>
+		
+		
+		<div class="w_news_tit of">
+
+			<ul>
+				{dede:channel  row='10' currentstyle="<li class='active'><a href='~typeurl~'><span>~typename~</span></a></li>"}
+					<li><a href='[field:typeurl/]'><span>[field:typename/]</span></a></li>
+				{/dede:channel}
+			</ul>
+		</div>
+		
+		<div class="w-news-list-body wd of first">
+			<ul>
+				{dede:list channelid='1' pagesize="10" typeid="2"}
+		    	<li>
+		    		<div class="w-news-tp of">
+			        	<div class="w-news-tp1 lf"><a href="[field:arcurl/]" title="">[field:image/]</a></div>
+			            <div class="w-news-tp2 lf">
+			            	<div class="w-news-tp21 cl"><a href="[field:arcurl/]" title="">[field:title/]</a></div>
+			                <div class="w-news-tp22 cl">[field:description /]</div>
+			            </div>
+			            <div class="w-news-tp3 rg">[field:pubdate function="GetDateMK(@me)"/]</div>
+		            </div>
+		        </li>
+				{/dede:list}
+		    </ul>
+
+			<div style="text-align: center;margin-top: 20px;margin-bottom: 50px;">{dede:pagelist istitem="pre,nex" listsize="5"/}</div>
+	    </div>
+
+	</div>
+	
+</div>
+
+<!--footer-->
+{dede:include filename="footer.htm"/}
+
+
+<script type="text/javascript" src="/templets/hehechang/js/jquery-1.11.3.min.js" ></script>
+<script type="text/javascript" src="/templets/hehechang/js/public.js" ></script>
+</body>
+</html>

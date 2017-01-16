@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>首页</title>
+<link href="/templets/hehechang/css/homepage.css" rel="stylesheet" type="text/css" />
+<link href="/templets/hehechang/css/headfooter.css" rel="stylesheet" type="text/css" />
+<link href="/templets/hehechang/css/common.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="/templets/hehechang/css/global.css" />
+<link rel="stylesheet" href="/templets/hehechang/css/style.css" /> 
+<link rel="stylesheet" href="/templets/hehechang/css/tonglan.css" />
+<script type="text/javascript" src="/templets/hehechang/js/Designer.js" ></script>
+</head>
+<body class="proudct">
+<!--header-->
+{dede:include filename="head.htm"/}
+
+<!--内容-->
+<div class="content">
+	<div class="unified-banner"><img src="/templets/hehechang/images/jxs.jpg"></div>
+	<!-- title  -->
+	<div class="rows">
+		<div class="unified-title">
+			<h1>{dede:field name='typename'/}</h1>
+			<div class="com-titlef">
+				<ul>
+					<li><a href="#" class="active">首页</a></li>
+					<li><i></i></li>
+					<li><a href="#">{dede:field name='typename'/}</a></li>
+				</ul>
+			</div>
+			<div class="com-titrig">
+				<div class="bshare-custom"><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到人人网" class="bshare-renren"></a><a title="分享到腾讯微博" class="bshare-qqmb"></a><a title="分享到网易微博" class="bshare-neteasemb"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a><span class="BSHARE_COUNT bshare-share-count">0</span></div><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+			</div>
+		</div>
+		
+		<!-- 条件选择 -->
+		<div class="w_news_tit of">
+			<ul>
+				{dede:channel  row='10' currentstyle="<li class='active'><a href='~typeurl~'>~typename~</a></li>"}
+				<li><a href='[field:typeurl/]'>[field:typename/]</a></li>
+				{/dede:channel}
+			</ul>
+		</div>
+		
+
+		<!--经销内容-->
+		<div class="league-detils">
+			<div class="leadtil-img"><img src="/templets/hehechang/images/jmzc-img.png"></div>
+			<div class="leadtil-txt">
+            	<h2>合和昌对经销商提供的支持</h2>
+                <ul>
+                	<li>第一步：提交申请——填写申请资料，提交有效证件</li>
+                    <li>第二步：厂家考核：实地考察，提出合作建议和等级定位</li>
+                    <li>第三步：考核通过</li>
+                    <li>第四步：签订合同，授予经销权</li>
+                    <li>第五步：合同执行，落实运营</li>
+                    <li>第六步：加盟成功</li>
+                </ul>
+            </div>
+			<div class="leadtil-btn">
+				<a href="#">我要加盟</a>
+			</div>
+		</div>
+		
+	</div>
+	
+</div>
+
+<!--footer-->
+{dede:include filename="footer.htm"/}
+
+
+<script type="text/javascript" src="/templets/hehechang/js/jquery-1.11.3.min.js" ></script>
+<script type="text/javascript" src="/templets/hehechang/js/public.js" ></script>
+<script type="text/javascript" src="/templets/hehechang/js/bank_area.js" ></script>
+<script type="text/javascript">
+
+ function getoption(data) {
+            if (!data)
+                return '';
+            var s = [];
+            for (var i in data) {
+                s.push('<option  value="' + (i * 1 + 1) + '">' + data[i] + '</option>');
+            }
+            return s.join('');
+        }
+
+$(document).ready(function(){
+	$('.w-zc-zjz-body a').height($('.w-zc-zjz-body a').width()*0.74);
+	
+	
+	$bankProv = $('#province'),
+    $bankCity = $('#city'),
+	 _Province = aProvince, _City = aCity;
+	$bankProv.change(function () {
+            var _i = parseInt($bankProv.val()) - 1;
+            $bankCity.empty().html('<option value="0" >选择市</option>' + getoption(_City[_i]));
+        });
+
+        $bankProv.empty().html('<option value="0">选择省</option>' + getoption(_Province));
+        $bankProv.change();
+
+   window.onresize = function () {
+	$('.w-zc-zjz-body a').height($('.w-zc-zjz-body a').width()*0.74);
+
+
+
+	}     
+	
+});
+</script>
+
+</body>
+</html>

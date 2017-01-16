@@ -1,0 +1,1 @@
+<li class="dot1"><img src="[field:litpic/]" class="img100" /><h3><a href="[field:arcurl/]">[field:title/]</a></h3><p>[field:info/]</p></li>

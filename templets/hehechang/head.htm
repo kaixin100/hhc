@@ -1,0 +1,50 @@
+<div class="header">
+    <!-- 页眉顶部 -->
+    <div class="navbar-fixed">
+        <div class="navbar-logo"><a href="index.html"></a></div>
+        <div class="navbar-nav">
+            <ul>
+                <li>
+
+                    <a href="{dede:global.cfg_basehost/}" {dede:field name=typeid runphp="yes"}(@me=="")? @me=" class='active'":@me="";{/dede:field}>
+                    <span>Home</span>
+                        <P>首页</P>
+                    </a>
+                </li>
+                {dede:channel type='top' row='9' currentstyle="<li><a href='~typelink~' class='active'><span></span>~typename~</a></li>"}
+                <li>
+                    <a href="[field:typelink/]">
+                        <span>[field:description /]</span>
+                        <p>[field:typename/]</p>
+                    </a>
+                </li>
+                {/dede:channel}
+
+            </ul>
+        </div>
+        <div class="navber-tck">
+            <ul>
+                <li>
+                    <a href="#" class="navfix-wx">
+                        <div class="dropdown-menu hide drop-wx">
+                            <div class="drop-box1">
+                                <img src="/templets/hehechang/images/ewm-img1.jpg">
+                            </div>
+
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="navfix-ss">
+                        <div class="dropdown-menu hide drop-ss">
+                            <div class="drop-box2">
+                                <input type="text" class="boxss" class="inputText"  x-webkit-speech>
+                                <input type="button"class="btnss" value="搜索">
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

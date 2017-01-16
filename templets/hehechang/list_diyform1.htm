@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>首页</title>
+<link href="/templets/hehechang/css/homepage.css" rel="stylesheet" type="text/css" />
+<link href="/templets/hehechang/css/headfooter.css" rel="stylesheet" type="text/css" />
+<link href="/templets/hehechang/css/common.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="/templets/hehechang/css/global.css" />
+<link rel="stylesheet" href="/templets/hehechang/css/style.css" /> 
+<link rel="stylesheet" href="/templets/hehechang/css/tonglan.css" />
+<script type="text/javascript" src="/templets/hehechang/js/Designer.js" ></script>
+</head>
+<body class="proudct">
+<!--header-->
+{dede:include filename="head.htm"/}
+
+<!--内容-->
+<div class="content">
+	<div class="unified-banner"><img src="/templets/hehechang/images/jxs.jpg"></div>
+	<!-- title  -->
+	<div class="rows">
+		<div class="unified-title">
+			<h1>{dede:field name='typename'/}</h1>
+			<div class="com-titlef">
+				<ul>
+					<li><a href="#" class="active">首页</a></li>
+					<li><i></i></li>
+					<li><a href="#">{dede:field name='typename'/}</a></li>
+				</ul>
+			</div>
+			<div class="com-titrig">
+				<div class="bshare-custom"><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到人人网" class="bshare-renren"></a><a title="分享到腾讯微博" class="bshare-qqmb"></a><a title="分享到网易微博" class="bshare-neteasemb"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a><span class="BSHARE_COUNT bshare-share-count">0</span></div><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+			</div>
+		</div>
+		
+		<!-- 条件选择 -->
+		<div class="w_news_tit of">
+			<ul>
+				{dede:channel  row='10' currentstyle="<li class='active'><a href='~typeurl~'>~typename~</a></li>"}
+				<li><a href='[field:typeurl/]'>[field:typename/]</a></li>
+				{/dede:channel}
+			</ul>
+		</div>
+		
+		<div class="w-cp-body-top of">
+        	<div class="w-cp-body-top1 lf">寻找附近的经销点</div>
+       		<div class="w-cp-body-top2 lf">
+          		<select name="province" class="ui-select" id="province"></select>
+            </div>
+        	<div class="w-cp-body-top2 lf">
+          		<select name="city" class="ui-select" id="city"></select>
+          	</div>
+        	<div class="w-cp-body-top3 lf">关键字</div>
+        	<div class="w-cp-body-top4 lf">
+          		<input type="text" name="" />
+        	</div>
+        	<div class="w-cp-body-top5 lf">
+          		<input type="submit" name="" value="确定" />
+        	</div>
+      	</div>
+		<!--经销内容-->
+		<div class="league-form">
+			<div class="leaform-header">意向加盟申请表</div>
+			<div class="leaform-detils">
+				<table>
+					<tr>
+						<th>申请人姓名：</th>
+						<td>
+							<input type="text" class="leainpt-a" />
+						</td>
+						<th>移动电话：</th>
+						<td>
+							<input type="text" class="leainpt-a" />
+						</td>
+					</tr>
+					<tr>
+						<th>固定电话</th>
+						<td>
+							<input type="text" class="leainpt-a" />
+						</td>
+						<th>QQ：</th>
+						<td>
+							<input type="text" class="leainpt-a" />
+						</td>
+					</tr>
+					<tr>
+						<th>加盟地区</th>
+						<td>
+							<select class="leainpt-b" >
+								<option>请选择</option>
+							</select>
+						</td>
+						<th>传真</th>
+						<td>
+							<input type="text" class="leainpt-a" />
+						</td>
+					</tr>
+					<tr>
+						<th>详细地址：</th>
+						<td>
+							<input type="text" class="leainpt-a" />
+						</td>
+						<th>E-Mail：</th>
+						<td>
+							<input type="text" class="leainpt-a" />
+						</td>
+					</tr>
+					
+					<tr>
+						<th>经营性质</th>
+						<td>
+							<span class="leainpt-c"><input type="radio" class="radiocss" name="xz">私营</span>
+							<span class="leainpt-c"><input type="radio" class="radiocss" name="xz">合资</span>
+							<span class="leainpt-c"><input type="radio" class="radiocss" name="xz">经营模式</span>
+							<div class="leainpt-div">
+								<input type="text" class="leainpt-d"/>
+								<span>平方米</span>
+							</div>
+						</td>
+						<th>茶行业从业时间：</th>
+						<td>
+							<input type="text" class="leainpt-a" />
+						</td>
+					</tr>
+					<tr>
+						<th>曾经营和现经营产品：</th>
+						<td>
+							<input type="text" class="leainpt-a" />
+						</td>
+						<th>普洱茶从业时间：</th>
+						<td>
+							<input type="text" class="leainpt-a" />
+						</td>
+					</tr>
+					<tr>
+						<th>您对合和昌的了解情况：</th>
+						<td>
+							<input type="text" class="leainpt-a" />
+						</td>
+						<th>公司全称：</th>
+						<td>
+							<input type="text" class="leainpt-a" />
+						</td>
+					</tr>
+					<tr>
+						<th>所在地注意茶叶品牌：</th>
+						<td>
+							<input type="text" class="leainpt-a" />
+						</td>
+						<th>法定代表人：</th>
+						<td>
+							<input type="text" class="leainpt-a" />
+						</td>
+					</tr>
+					<tr>
+						<th>加盟经营计划：</th>
+						<td>
+							<input type="text" class="leainpt-a" />
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="leaform-btn">
+				<input type="button" class="leabtn" value="提交申请" />
+			</div>
+		</div>
+		
+	</div>
+	
+</div>
+
+<!--footer-->
+{dede:include filename="footer.htm"/}
+
+
+<script type="text/javascript" src="/templets/hehechang/js/jquery-1.11.3.min.js" ></script>
+<script type="text/javascript" src="/templets/hehechang/js/public.js" ></script>
+<script type="text/javascript" src="/templets/hehechang/js/bank_area.js" ></script>
+<script type="text/javascript">
+
+ function getoption(data) {
+            if (!data)
+                return '';
+            var s = [];
+            for (var i in data) {
+                s.push('<option  value="' + (i * 1 + 1) + '">' + data[i] + '</option>');
+            }
+            return s.join('');
+        }
+
+$(document).ready(function(){
+	$('.w-zc-zjz-body a').height($('.w-zc-zjz-body a').width()*0.74);
+	
+	
+	$bankProv = $('#province'),
+    $bankCity = $('#city'),
+	 _Province = aProvince, _City = aCity;
+	$bankProv.change(function () {
+            var _i = parseInt($bankProv.val()) - 1;
+            $bankCity.empty().html('<option value="0" >选择市</option>' + getoption(_City[_i]));
+        });
+
+        $bankProv.empty().html('<option value="0">选择省</option>' + getoption(_Province));
+        $bankProv.change();
+
+   window.onresize = function () {
+	$('.w-zc-zjz-body a').height($('.w-zc-zjz-body a').width()*0.74);
+
+
+
+	}     
+	
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ------------- 页头样式 ------------- */
+.header{ width:100%; background:#ffffff;}
+.header .navbar-fixed{height:110px; width: 1100px; margin: 0 auto;}
+.header .navbar-fixed .navbar-logo{ float: left; width: 300px;}
+.header .navbar-fixed .navbar-logo a{ background: url(../images/logo.png) no-repeat; width: 223px; height: 65px; display: block; margin-top: 22px;}
+/* ------------- nav导航 ------------- */
+.header .navbar-fixed .navbar-nav{ float: left; margin-left: 80px; height: 110px; overflow: hidden;}
+.header .navbar-fixed .navbar-nav ul li{ float: left; margin-right:30px; margin-top: 30px;}
+.header .navbar-fixed .navbar-nav ul li a{ color: #727171; font-size: 15px;}
+.header .navbar-fixed .navbar-nav ul li a span{ height: 20px; display: block; color: #9fa0a0; font-size: 15px; font-style: normal;}
+.header .navbar-fixed .navbar-nav ul li a.active{ color: #d8b05a;}
+.header .navbar-fixed .navbar-nav ul li a.active p{ color: #d8b05a;}
+.header .navbar-fixed .navbar-nav ul li a:hover p{color: #d8b05a;}
+
+.header .navbar-fixed .navber-tck{ float:right; position:relative;}
+.header .navbar-fixed .navber-tck ul li{ float:right; margin-left:20px;}
+.header .navbar-fixed .navber-tck .navfix-wx{ margin-top:46px; width:21px; height:21px; display:block; background:url(../images/headr-icobs.png) no-repeat;}
+.header .navbar-fixed .navber-tck .navfix-wx:hover{ background:url(../images/headr-icob.png) no-repeat;}
+.header .navbar-fixed .navber-tck .navfix-ss{ margin-top:46px; width:21px; height:21px; display:block; background:url(../images/headr-icoas.png) no-repeat;}
+.header .navbar-fixed .navber-tck .navfix-ss:hover{ background:url(../images/headr-icoa.png) no-repeat;}
+
+.header .navbar-fixed .navber-tck .dropdown-menu{position:absolute; z-index:1000; display:none; background:none;}
+.header .navbar-fixed .navber-tck .drop-wx{ width:142px; height:180px; right:0px;}
+.header .navbar-fixed .navber-tck .drop-wx .drop-box1{  border:1px solid #dcdddd;  background:#FFF; width:140px; height:140px; margin-top:30px;}
+.header .navbar-fixed .navber-tck .drop-wx img{ width:120px; height:120px; margin:10px;}
+
+.header .navbar-fixed .navber-tck .drop-ss .drop-box2{background:#FFF; border:1px solid #d9b25e; width:170px;  height:24px; margin-top:30px; }
+.header .navbar-fixed .navber-tck .drop-ss{ width:170px; height:64px;  right:35px;}
+.header .navbar-fixed .navber-tck .boxss{ width:130px; height:22px; border:none; float:left; border-right:1px solid #d9b25e; color:#d9b25e; font-size:12px; line-height:24px;}
+.header .navbar-fixed .navber-tck .btnss{ display:block; float:right; width:36px; height:24px; font-size:12px; color:#d9b25e; background:none; border:none; text-align:center; line-height:24px;}
+
+/* ------------- 统一标题 ------------- */
+.unified-banner{ height: 203px; text-align: center; width: 100%;}
+.unified-title{width: 1100px; margin: 0 auto; border-bottom: 1px solid #d2d2d2; overflow: hidden; margin-bottom: 20px;}
+.unified-title h1{ font-size: 30px; color: #c8a564; font-weight: normal; font-family: simsun; height: 70px; line-height: 70px; clear: both;}
+.unified-title .com-titlef{ float: left; width: 500px;}
+.unified-title .com-titlef ul li{ float: left; font-size: 12px;}
+.unified-title .com-titlef i{ display: block; width: 30px ; height: 30px; background: url(../images/jtico.png) no-repeat;}
+.unified-title .com-titlef a{ line-height: 30px; color: #9fa0a0;}
+.unified-title .com-titlef a:hover,.unified-title .com-titlef a.active{ color: #c8a564;}
+.unified-title .com-titrig{ float: right; margin-top: 5px;}
+
+
+/* ------------- 页脚样式 ------------- */
+.footer{ width:100%; clear:both; background: #008643; border-top: 3px solid #d8af58; overflow: hidden; height: 65px;}
+.footer .navbar-fixed{ width:1100px; margin: 0 auto;}
+.footer .navbar-fixed .foternav-lef{ float: left; margin-top: 20px;}
+.footer .navbar-fixed .foternav-lef ul li{ float: left; margin-right: 10px; color: #f6bd51; line-height: 37px;}
+.footer .navbar-fixed .foternav-lef ul li img{ width: 123px; height: 37px;}
+.footer .navbar-fixed .foternav-lef ul li a{ color: #f6bd51; font-size: 14px;}
+.footer .navbar-fixed .foternav-rig{ float: right; width: 540px; margin-top: 15px;}
+.footer .navbar-fixed .foternav-rig p{ text-align: right; color: #003f1f; font-size: 12px; margin-bottom: 5px;}
+.footer .navbar-fixed .foternav-rig h3{ font-weight: normal; color:#006331; font-size: 12px; text-align: right;}
+.footer .navbar-fixed .foternav-rig h3 a{ color:#006331; padding-left: 20px;}

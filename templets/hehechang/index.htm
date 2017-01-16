@@ -1,0 +1,344 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>首页</title>
+<link href="/templets/hehechang/css/homepage.css" rel="stylesheet" type="text/css" />
+<link href="/templets/hehechang/css/headfooter.css" rel="stylesheet" type="text/css" />
+<link href="/templets/hehechang/css/common.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="/templets/hehechang/css/global.css" />
+
+<link rel="stylesheet" href="/templets/hehechang/css/tonglan.css" />
+	<script type="text/javascript" src="/templets/hehechang/js/jquery-1.11.3.min.js" ></script>
+<script type="text/javascript" src="/templets/hehechang/js/Designer.js" ></script>
+</head>
+<body class="homepage">
+<!--header-->
+{dede:include filename="head.htm"/}
+
+<!--内容-->
+<div class="content">
+	<!-- 轮播ONE -->
+    <div id="bannerqh1" class="flexslider1">
+        <ul class="slides">
+
+			{dede:include filename="index_banner.htm"/}
+			<!--{dede:field.id  function="Getimg(@me,80,80,7)" /}-->
+			{dede:productimagelist typeid="8"}
+			<li>
+				<div class="img" title="banner1">
+					<a href="javascript:;" title="[field:text/]">
+						<img src="[field:imgsrc/]" alt="[field:text/]"/>
+					</a>
+				</div>
+			</li>
+			{/dede:productimagelist}
+        </ul>
+    </div>
+	
+	<!-- 轮播TWO -->
+    <div class="flexbanner">
+        <div class="h_tonglan xiant">
+            <ul class="h218px">
+                <table width="1231" height="120" align="center" cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    <th width="47" valign="top"><img src="/templets/hehechang/images/leftjt.png" class="pointer" id="arrLeft" border="0" /></th>
+                    <td width="1137" valign="top">
+                    <div id="scrollbox">
+                        <ul>
+							{dede:artlist typeid="29" addfields="body" channelid='19' row="6"}
+								<li><A href="[field:arcurl/]"><IMG src="[field:litpic/]" border="0" ></A></li>
+							{/dede:artlist}
+                        </ul>
+                    </div>
+                </td>
+                <th width="47" valign="top"><img src="/templets/hehechang/images/rightjt.png" class="pointer" id="arrRight" border="0" /></th>
+                </tr>
+                </table>
+                <SCRIPT language=javascript type=text/javascript>
+                    var scrollPic_02 = new ScrollPic();
+                        scrollPic_02.scrollContId   = "scrollbox"; //内容容器ID
+                        scrollPic_02.arrLeftId      = "arrLeft";//左箭头ID
+                        scrollPic_02.arrRightId     = "arrRight"; //右箭头ID
+                        scrollPic_02.frameWidth     = 1137;//显示框宽度
+                        scrollPic_02.pageWidth      = 1137; //翻页宽度
+                        scrollPic_02.speed          = 8; //移动速度(单位毫秒，越小越快)
+                        scrollPic_02.space          = 8; //每次移动像素(单位px，越大越快)
+                        scrollPic_02.autoPlay       = true; //自动播放
+                        scrollPic_02.autoPlayTime   = 2; //自动播放间隔时间(秒)
+                        scrollPic_02.initialize(); //初始化
+                </SCRIPT>
+            </ul>
+        </div>
+    </div>
+    	
+    <!-- 简介 -->
+    <div class="brifinrion">
+    	<div class="rows">
+    		<div class="brion-lef"></div>
+    		<div class="brion-rig">
+				{dede:arclist idlist='10' channelid='1' addfields='body'}
+					[field:body function='cn_substr(@me,950)'/]...
+				{/dede:arclist}
+    			<div class="brion-href">
+    				<a href="/a/qiyejianjie/"><i>进入>></i> <span>企业简介</span></a>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    
+	<!-- 产品 -->
+	<div class="product">
+		<!--插件-->
+		<div id="container">
+				<div id="products_example">
+					<div id="products">
+						<div class="slides_container">
+							<a href="#" target="_blank">
+			                    <div class="patin-from2">
+				                    <img src="/templets/hehechang/images/prod-imgs1.jpg" width="796" alt="patimg1">
+				                    <div class="patin-box2">
+				                    	<p class="pati-text">
+				                    		【乐丰】
+				                    		<span>2014年</span>
+				                    	</p>
+				                    </div>
+			                    </div>
+		                    </a>
+							<a href="#" target="_blank">
+								 <div class="patin-from2">
+				                    <img src="/templets/hehechang/images/prod-imgs1.jpg" width="796" alt="patimg2">
+				                    <div class="patin-box2">
+				                    	<p class="pati-text">
+				                    		【乐丰】
+				                    		<span>2015年</span>
+				                    	</p>
+				                    </div>
+			                    </div>
+							</a>
+							<a href="#" target="_blank">
+								 <div class="patin-from2">
+				                    <img src="/templets/hehechang/images/prod-imgs1.jpg" width="796" alt="patimg3">
+				                    <div class="patin-box2">
+				                    	<p class="pati-text">
+				                    		【乐丰】
+				                    		<span>2016年</span>
+				                    	</p>
+				                    </div>
+			                    </div>
+							</a>					
+							
+						</div>
+						<ul class="pagination">
+							<li>
+		                    	<a href="#">
+			                        <div class="patin-from1">
+			                            <img src="/templets/hehechang/images/prod-imgs1.jpg" alt="patimg1">
+			                            <div class="patin-box1">
+			                            	<p class="pati-text">
+				                    		【乐丰】
+				                    		<span>2014年</span>
+				                    	</p>
+			                            </div>
+			                        </div>
+		                        </a>
+		                    </li>
+							<li>
+								<a href="#">
+									<div class="patin-from1">
+			                            <img src="/templets/hehechang/images/prod-imgs1.jpg" alt="patimg2">
+			                            <div class="patin-box1">
+			                            	<p class="pati-text">
+				                    		【乐丰】
+				                    		<span>2015年</span>
+				                    	</p>
+			                            </div>
+			                        </div>
+		                       </a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="patin-from1">
+			                            <img src="/templets/hehechang/images/prod-imgs1.jpg" alt="patimg3">
+			                            <div class="patin-box1">
+			                            	<p class="pati-text">
+				                    		【乐丰】
+				                    		<span>2016年</span>
+				                    	</p>
+			                            </div>
+			                        </div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		<!--插件-->
+		<div class="product-more"><a href="/a/products/">查看更多产品>></a></div>
+	</div>
+	
+	<!-- 新闻动态 -->
+	<div class="newsfin">
+		<h1>新闻动态</h1>
+		<div class="rows">
+			<!--公司新闻-->
+			<div class="news-box">
+				<div class="newfin-title">
+					{dede:type typeid='11'} <a href='[field:typelink /]'><P>[field:typename/]</P></a> {/dede:type}
+					<span></span>
+				</div>
+				{dede:artlist row="1" orderby=pubdate limit=0,1 typeid="11"}
+					<div class="newfin-list1">
+						<div class="newfin-img"><img src="[field:litpic/]"> </div>
+						<div class="newfin-time">[field:pubdate function="GetDateMK(@me)"/]</div>
+						<a href="[field:arcurl/]" class="newfin-li">
+						<p>[field:title/]</p>
+						<span></span>
+						</a>
+					</div>
+				{/dede:artlist}
+				<div class="newfin-list2">
+					<ul>
+						{dede:artlist channelid='1' orderby=pubdate typeid="11" row="4"  limit=1,3}
+							<li>
+								<a href="[field:arcurl/]" class="newfin-li">
+								<p>[field:title/]</p>
+								<span></span>
+								</a>
+							</li>
+						{/dede:artlist}
+					</ul>
+				</div>
+			</div>
+			<!--行业动态-->
+			<div class="news-box marjl">
+				<div class="newfin-title">
+					{dede:type typeid='12'} <a href='[field:typelink /]'><P>[field:typename/]</P></a> {/dede:type}
+					<span></span>
+				</div>
+				{dede:artlist row="1" orderby=pubdate limit=0,1 typeid="12"}
+				<div class="newfin-list1">
+					<div class="newfin-img"><img src="/[field:litpic/]"> </div>
+					<div class="newfin-time">[field:pubdate function="GetDateMK(@me)"/]</div>
+					<a href="[field:arcurl/]" class="newfin-li">
+					<p>[field:title/]</p>
+					<span></span>
+					</a>
+				</div>
+				{/dede:artlist}
+				<div class="newfin-list2">
+					<ul>
+						{dede:artlist channelid='1' orderby=pubdate typeid="12" row="4"  limit=1,3}
+						<li>
+							<a href="[field:arcurl/]" class="newfin-li">
+							<p>[field:title/]</p>
+							<span></span>
+							</a>
+						</li>
+						{/dede:artlist}
+					</ul>
+				</div>
+			</div>
+			<!--最新活动-->
+			<div class="news-box">
+				<div class="newfin-title">
+					{dede:type typeid='13'} <a href='[field:typelink /]'><P>[field:typename/]</P></a> {/dede:type}
+					<span></span>
+				</div>
+				{dede:artlist row="1" orderby=pubdate limit=0,1 typeid="13"}
+				<div class="newfin-list1">
+					<div class="newfin-img"><img src="[field:litpic/]"> </div>
+					<div class="newfin-time">[field:pubdate function="GetDateMK(@me)"/]</div>
+					<a href="[field:arcurl/]" class="newfin-li">
+					<p>[field:title/]</p>
+					<span></span>
+					</a>
+				</div>
+				{/dede:artlist}
+				<div class="newfin-list2">
+					<ul>
+						{dede:artlist channelid='1' orderby=pubdate typeid="13" row="4"  limit=1,3}
+							<li>
+								<a href="[field:arcurl/]" class="newfin-li">
+								<p>[field:title/]</p>
+								<span></span>
+								</a>
+							</li>
+						{/dede:artlist}
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--友情链接-->
+	<div class="indxfot">
+		<div class="rows">
+			<div class="weibohd">
+				<h1>微博互动</h1>
+				<iframe width="430" height="300" class="share_self" frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&amp;width=350&amp;height=338&amp;fansRow=2&amp;ptype=0&amp;speed=0&amp;skin=9&amp;isTitle=1&amp;noborder=1&amp;isWeibo=1&amp;isFans=0&amp;uid=1703010470&amp;verifier=93774f41&amp;dpc=1"></iframe>
+			</div>
+			<div class="idoewm-box">
+				<div class="idoewm-img"><img src="/templets/hehechang/images/ewm-img1.jpg"></div>
+				<P>
+					<span>扫描二维码关注</span>
+					<span>微信合和昌茶业</span>
+				</P>
+			</div>
+			<div class="idoewm-box">
+				<div class="idoewm-img"><img src="/templets/hehechang/images/ewm-img2.jpg"></div>
+				<P>
+					<span>扫描二维码关注</span>
+					<span>微信合和昌茶业</span>
+				</P>
+			</div>
+		</div>
+		<div class="rows">
+			<div class="indtlj" style="padding-top: 45px;">
+				<ul>
+					<li>友情链接：</li>
+					{dede:flink row='24' type='image' titlelen="24" typeid="0"} [field:link /] {/dede:flink}
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+<!--footer-->
+{dede:include filename="footer.htm"/}
+
+
+
+<script type="text/javascript" src="/templets/hehechang/js/public.js" ></script>
+<script type="text/javascript" src="/templets/hehechang/js/slides.min.jquery.js" ></script>
+<!--首页幻灯片 -->
+<script type="text/javascript" src="/templets/hehechang/js/slider.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('#bannerqh1').flexslider({
+		pauseOnHover: true,
+		animation: "slide",
+		direction:"horizontal",
+		easing:"swing",
+		slideshowSpeed:5000
+	});
+});
+</script>
+<script>
+	$(function(){
+		$('#products').slides({
+			preload: true,
+			preloadImage: 'images/loading.gif',
+			effect: 'slide, fade',
+			crossfade: true,
+			slideSpeed: 350,
+			fadeSpeed: 500,
+			generateNextPrev: true,
+			generatePagination: false
+		});
+	});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>首页</title>
+<link href="/templets/hehechang/css/homepage.css" rel="stylesheet" type="text/css" />
+<link href="/templets/hehechang/css/headfooter.css" rel="stylesheet" type="text/css" />
+<link href="/templets/hehechang/css/common.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="/templets/hehechang/css/global.css" />
+<link rel="stylesheet" href="/templets/hehechang/css/style.css" /> 
+<link rel="stylesheet" href="/templets/hehechang/css/tonglan.css" />
+<script type="text/javascript" src="/templets/hehechang/js/Designer.js" ></script>
+</head>
+<body class="proudct">
+<!--header-->
+{dede:include filename="head.htm"/}
+
+<!--内容-->
+<div class="content">
+	<div class="unified-banner"><img src="/templets/hehechang/images/jxs.jpg"></div>
+	<!-- title  -->
+	<div class="rows">
+		<div class="unified-title">
+			<h1>{dede:field name='typename'/}</h1>
+			<div class="com-titlef">
+				<ul>
+					<li><a href="#" class="active">首页</a></li>
+					<li><i></i></li>
+					<li><a href="#">{dede:field name='typename'/}</a></li>
+				</ul>
+			</div>
+			<div class="com-titrig">
+				<div class="bshare-custom"><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到人人网" class="bshare-renren"></a><a title="分享到腾讯微博" class="bshare-qqmb"></a><a title="分享到网易微博" class="bshare-neteasemb"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a><span class="BSHARE_COUNT bshare-share-count">0</span></div><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+			</div>
+		</div>
+		
+		<!-- 条件选择 -->
+		<div class="w_news_tit of">
+			<ul>
+				{dede:channel  row='10' currentstyle="<li class='active'><a href='~typeurl~'>~typename~</a></li>"}
+				<li><a href='[field:typeurl/]'>[field:typename/]</a></li>
+				{/dede:channel}
+			</ul>
+		</div>
+
+		<!--经销内容-->
+		<div class="league-detils">
+			<div class="leadtil-txt">
+            	<h2>全程高品质与服务的支持与保证</h2>
+                <ul>
+                	<li>1）采购：合和昌拥有经验丰富的原材料采购团队，在春茶开始前便深入到勐海茶区寨子中实施。同时安排了专人监督毛茶收购，保证每一批原材料都具备高质量；</li>
+                    <li>2）研发：合和昌拥有业内一流的普洱茶研发团队，以优质的原材料为基础，调制出以“浓、稠、厚、润”为特色的高端普洱茶；</li>
+                    <li>3）生产：合和昌茶厂拥有经验丰富的工人，坚持以传统工艺生产，保证了产品生产过程的绿色环保；</li>
+                    <li>4）营销：为市场赢得制高，合和昌每一款茶品都进行线上线下强势的品牌推广营销推动；每一款产品都会免费向经销商提供“小红盒”试喝装；</li>
+                    <li>5）服务：保持与经销商的紧密沟通，快速解决经销商面临的困难，定期上门拜访面谈，协助培训专业普洱茶人员。</li>
+                </ul>
+                
+                <h2>经销商充分利润价值支持作为合和昌经销商的价格体现</h2>
+                <ul>
+                	<li>1）全国统一零售价；</li>
+                    <li>2）实体门店和淘宝商铺价格一致；</li>
+                    <li>3）每款茶品每年能有20一30％以上的升幅率；</li>
+                    <li>4）经销商有合理的利润空间。</li>
+                </ul>
+                
+                <h2>合和昌对经销商提供的其他各大支持</h2>
+                <ul>
+                	<li>1）合和昌支持经销商物料；</li>
+                    <li>2）合和昌协助经销商开合和昌品茗会；</li>
+                    <li>3）合和昌配合经销商举办能推动合和昌品牌树立知名度的活动；</li>
+                    <li>4）合和昌赞助有影响力的城市经销商开茶博会，提升经销商地位和形象；</li>
+                    <li>5）合和昌定期与经销商交流，共同应对市场变化，针对经销商存在的问题提供解决方案；</li>
+                    <li>6）合和昌提供全国经销商的优秀员工培训，为经销商所在城市的茶艺标准化、茶知识系统化；</li>
+                    <li>7）合和昌每年召开经销商大会，总结归纳本年状态，分析预测明年发展趋势，分担解决当前存在压力。</li>
+                </ul>
+            </div>
+			<div class="leadtil-btn">
+				<a href="#">我要加盟</a>
+			</div>
+		</div>
+		
+	</div>
+	
+</div>
+
+<!--footer-->
+{dede:include filename="footer.htm"/}
+
+
+<script type="text/javascript" src="/templets/hehechang/js/jquery-1.11.3.min.js" ></script>
+<script type="text/javascript" src="/templets/hehechang/js/public.js" ></script>
+<script type="text/javascript" src="/templets/hehechang/js/bank_area.js" ></script>
+<script type="text/javascript">
+
+ function getoption(data) {
+            if (!data)
+                return '';
+            var s = [];
+            for (var i in data) {
+                s.push('<option  value="' + (i * 1 + 1) + '">' + data[i] + '</option>');
+            }
+            return s.join('');
+        }
+
+$(document).ready(function(){
+	$('.w-zc-zjz-body a').height($('.w-zc-zjz-body a').width()*0.74);
+	
+	
+	$bankProv = $('#province'),
+    $bankCity = $('#city'),
+	 _Province = aProvince, _City = aCity;
+	$bankProv.change(function () {
+            var _i = parseInt($bankProv.val()) - 1;
+            $bankCity.empty().html('<option value="0" >选择市</option>' + getoption(_City[_i]));
+        });
+
+        $bankProv.empty().html('<option value="0">选择省</option>' + getoption(_Province));
+        $bankProv.change();
+
+   window.onresize = function () {
+	$('.w-zc-zjz-body a').height($('.w-zc-zjz-body a').width()*0.74);
+
+
+
+	}     
+	
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+<p>[field:body function='cn_substr(@me,1100)'/]</p>

@@ -1,0 +1,31 @@
+@charset "gb2312";
+ 
+.h_tonglan {width:1241px;background:none;padding:14px 10px;margin:0 auto;}
+.h_tonglan dl {width:1100px;height:32px;_height:32px;background:url(/image/huixian2.gif) repeat-x top;margin-left:10px;margin-right:10px;}
+.h_tonglan dl dd {float:left;width:196px;height:32px;_height:32px;background:url(/image/lvx2.gif) repeat-x top;}
+.h_tonglan dl dt {float:right;width:700px;text-align:right;line-height:25px;min-height:25px;color:#6A6A6A;}
+.h_tonglan ul {overflow:hidden;}
+.h190px {overflow:hidden;margin-left:10px;margin-right:10px;padding-bottom:3px;padding-top:14px;}
+.h190px img {width:938px;border:0px;}
+
+.h218px {width:1241px;height:120px;_height:120px; padding-top:14px;margin:0 auto;}
+.h218px th {padding-top:30px;}
+.h218px td {overflow:hidden;}
+#scrollbox ul {overflow:hidden; width:1137px;}
+#scrollbox ul LI {FLOAT:left;width:379px;_width:379px; padding:0px; height:120px;_height:120px;vertical-align:top;font-size:12px;line-height:18px;min-height:18px;text-align:center;overflow:hidden;}
+#scrollbox ul LI img{ width:349px; height:113px; border:0px;}
+.pointer {CURSOR: pointer}
+
+
+.fB{font-weight:bold;}
+.fred {color:#ff0000;}
+.f12px{font-size:12px;}
+.f14px{font-size:14px;}
+.f14pxbai{font-size:14px;color:#ffffff; font-weight:bold;}
+.f16px{font-size:16px;}
+.f18px{font-size:18px;}
+.f22px{font-size:22px;color:#FFFFFF;}
+.center {margin:0px auto;}
+.left{float:left;}
+.right{float:right;}
+.rejm {width:60px;height:20px;border:#7E9DB9 1px solid;line-height:20px;}

@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>首页</title>
+<link href="/templets/hehechang/css/homepage.css" rel="stylesheet" type="text/css" />
+<link href="/templets/hehechang/css/headfooter.css" rel="stylesheet" type="text/css" />
+<link href="/templets/hehechang/css/common.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="/templets/hehechang/css/global.css" />
+
+<link rel="stylesheet" href="/templets/hehechang/css/tonglan.css" />
+<script type="text/javascript" src="/templets/hehechang/js/Designer.js" ></script>
+</head>
+<body class="proudct">
+<!--header-->
+{dede:include filename="head.htm"/}
+
+<!--内容-->
+<div class="content">
+	<div class="unified-banner"><img src="/templets/hehechang/images/unified-banner2.jpg"></div>
+	<!-- title  -->
+	<div class="rows">
+		<div class="unified-title">
+			<h1>{dede:field name='typename'/} </h1>
+			<div class="com-titlef">
+				<ul>
+					<li><a href="/" class="active">首页</a></li>
+					<li><i></i></li>
+					<li><a href="#">{dede:field name='typename'/}</a></li>
+				</ul>
+			</div>
+			<div class="com-titrig">
+				<div class="bshare-custom"><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到人人网" class="bshare-renren"></a><a title="分享到腾讯微博" class="bshare-qqmb"></a><a title="分享到网易微博" class="bshare-neteasemb"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a><span class="BSHARE_COUNT bshare-share-count">0</span></div><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+			</div>
+		</div>
+		
+		<!-- 条件选择 -->
+		<div class="search">
+			<dl class="condi-selet1">
+				<dd><a href="#shuca" val="shuca" class="tea active">熟茶</a></dd>
+				<dd><a href="#shuca" val="shuca" class="tea">生茶</a></dd>
+			</dl>
+			
+			<dl class="condi-selet2">
+
+				<dd><a href="#2016" val="2016" class="time active">2016</a></dd>
+				<dd><a href="#2015" val="2015" class="time">2015</a></dd>
+				<dd><a href="#2014" val="2014" class="time">2014</a></dd>
+				<dd><a href="#2013" val="2013" class="time">2013</a></dd>
+				<dd><a href="#2012" val="2012" class="time">2012</a></dd>
+				<dd><a href="#2011" val="2011" class="time">2011</a></dd>
+				<dd><a href="#2010" val="2010" class="time">2010</a></dd>
+			</dl>
+			
+			<dl class="condi-selet3">
+				{dede:channel typeid="4"}
+					<dd><a href="[field:typeurl/]" val="xxl">[field:typename/]</a></dd>
+				{/dede:channel}
+			</dl>
+			
+		</div>
+	</div>
+	
+	<!-- 产品列表 -->
+	<div class="proudct-list">
+		{dede:arclist pagesize="6" orderby='pubdate' }
+			<div class="proclist-box">
+				<a href="[field:arcurl/]">
+				<div class="proclist-img"><img src="[field:litpic/]"></div>
+				<P>【[field:title/]】<span>[field:pubdate function='strftime("%Y",@me)'/]</span></P>
+				</a>
+			</div>
+		{/dede:arclist}
+		<div class="proclist-border"></div>
+	</div>
+	<!--分页-->
+	<div class="fy">
+		<span><</span>
+		<span>1</span>
+		<a href="#">2</a>
+		<a href="#">3</a>
+		<a href="#">4</a>
+		<a href="#">></a>
+	</div>
+	<!--页脚图片-->
+	<div class="produ-infornd ">
+		<img src="/templets/hehechang/images/prodinf-img.jpg">
+	</div>
+</div>
+
+<!--footer-->
+{dede:include filename="footer.htm"/}
+
+
+<script type="text/javascript" src="/templets/hehechang/js/jquery-1.11.3.min.js" ></script>
+<script type="text/javascript" src="/templets/hehechang/js/public.js" ></script>
+
+
+</body>
+</html>

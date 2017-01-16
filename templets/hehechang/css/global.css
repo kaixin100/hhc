@@ -1,0 +1,126 @@
+
+
+#container {
+	width:1100px;
+	padding:10px;
+	margin:40px auto 0px;
+	position:relative;
+	z-index:0;
+}
+
+#products_example {
+	width:1100px;
+	height:517px;
+	position:relative;
+}
+
+/*
+	Slideshow
+*/
+
+#products {
+	margin-left:26px;
+}
+
+/*
+	Slides container
+	Important:
+	Set the width of your slides container
+	Set to display none, prevents content flash
+*/
+
+#products .slides_container {
+	width:793px;
+	height:507px;
+	overflow:hidden;
+	float:left;
+	position:relative;
+	border:1px solid #dfdfdf;
+	display:none;
+}
+
+/*
+	Each slide
+	Important:
+	Set the width of your slides
+	If height not specified height will be set by the slide content
+	Set to display block
+*/
+
+.slides_container a {
+	width:366px;
+	height:274px;
+	display:block;
+}
+
+/*
+	Next/prev buttons
+*/
+
+#products .next,#products .prev {
+	position:absolute;
+	top:127px;
+	left:0;
+	width:21px;
+	height:0;
+	padding-top:21px;
+	overflow:hidden;
+	display:block;
+	z-index:101;
+}
+
+#products .prev {
+	left:30px;
+	background:url(../images/arrows.png);
+}
+
+#products .next {
+	left:790px;
+	background:url(../images/arrows.png);
+}
+
+/*
+	Pagination
+*/
+
+#products .pagination {
+	background:#fff;
+	width:256px;
+	padding:5px 5px;
+	float:right;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+}
+
+#products .pagination li {
+	clear:both;
+	margin-bottom:10px;
+	list-style:none;
+}
+
+#products .pagination li a {
+	display:block;
+	width:256px;
+	height:161px;
+	background:#f9f9f9;
+}
+#products .pagination li a img{width:256px; height:160px;}
+
+#products .pagination li.current a {
+	margin:0;
+}
+
+
+.patin-from1{ position:relative; width:256px; height:160px;}
+.patin-box1{ position:absolute; background:url(../images/prdct-text.png); color: #f2c973; font-size: 14px; line-height: 30px; width:256px; height:30px; z-index:5000; bottom:0;}
+.patin-from2{ position:relative;width:793px;height:507px;}
+.patin-box2{ position:absolute; background:url(../images/prdct-text.png); color: #f2c973; font-size: 24px; line-height: 50px;  width:793px; height:50px; z-index:5000; bottom:0;}
+
+
+
+
+
+
+
+

@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>首页</title>
+<link href="/templets/hehechang/css/homepage.css" rel="stylesheet" type="text/css" />
+<link href="/templets/hehechang/css/headfooter.css" rel="stylesheet" type="text/css" />
+<link href="/templets/hehechang/css/common.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="/templets/hehechang/css/global.css" />
+<link rel="stylesheet" href="/templets/hehechang/css/style.css" />
+<link rel="stylesheet" href="/templets/hehechang/css/tonglan.css" />
+<script type="text/javascript" src="/templets/hehechang/js/Designer.js" ></script>
+</head>
+<body class="contact_us">
+<!--header-->
+{dede:include filename="head.htm"/}
+
+<!--内容-->
+<div class="content">
+	<div class="flexbanner"></div>
+	<!-- title -->
+	<div class="rows">
+		<h1>联系我们</h1>
+		<div class="unified-title">
+			<div class="com-titlef">
+				<ul>
+					<li><a href="#" class="active">首页</a></li>
+					<li><i></i></li>
+					<li><a href="#">联系我们</a></li>
+				</ul>
+			</div>
+			<div class="com-titrig">
+				<div class="bshare-custom"><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到人人网" class="bshare-renren"></a><a title="分享到腾讯微博" class="bshare-qqmb"></a><a title="分享到网易微博" class="bshare-neteasemb"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a><span class="BSHARE_COUNT bshare-share-count">0</span></div><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+			</div>
+		</div>
+		
+		<div class="w-lxwm of">
+		    <div class="w-lxwm-body wd tc">
+		        <div class="w-lxwm1">全国服务热线</div>
+		        <div class="w-lxwm2">{dede:global.hot_line/}</div>
+		        <div class="w-lxwm3">{dede:global.company_address/}</div>
+				{dede:arclist row="1"}
+		        	<div class="w-lxwm4">[field:image/]</div>
+				{/dede:arclist}
+		        <div class="w-lxwm5">官方微博</div>
+		        <div class="w-lxwm6">@{dede:global.cfg_webname/}</div>
+		    </div>
+		    
+		    <div class="w_cu-more of">
+				{dede:artlist typeid="28" addfields="detail_address,contacts,qq_num" channelid='18' pagesize="10"}
+					<div class="w_cu_box lf">
+						<div class="w_cu_pic"><img src="[field:litpic/]" /></div>
+						<div class="w_cu_tit">[field:title/]</div>
+						<div class="w_cu_tel">电话：<strong>[field:qq_num/]</strong></div>
+						<div class="w_cu_tel">传真：<strong>[field:contacts/]</strong></div>
+						<div class="w_cu_add">地址：[field:detail_address/]</div>
+						<div class="w_cu_map of tc"><a href="#">查看地图位置</a></div>
+					</div>
+				{/dede:artlist}
+		    </div>
+		    
+		    
+		</div>
+		
+	</div>
+	
+</div>
+
+<!--footer-->
+{dede:include filename=footer.htm"/}
+
+
+<script type="text/javascript" src="/templets/hehechang/js/jquery-1.11.3.min.js" ></script>
+<script type="text/javascript" src="/templets/hehechang/js/public.js" ></script>
+<script>
+	$(".w_cu_box:even").addClass('rg');
+</script>
+
+</body>
+</html>
